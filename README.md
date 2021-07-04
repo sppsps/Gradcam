@@ -27,5 +27,16 @@ optional arguments:
 # Summary
 
 ## Introduction
-We used VGG16 for the implementation.
+Grad-Cam uses the gradient information flowing into the last convolutional layer of the CNN to understand each neuron for a decision of interest.
+
+
+Let Ak be the kth feature map (k=1,⋯,K) from the last convolusional layer. Grad-CAM utilize these Ak to visualize the decision made by CNN.
+
+* Visualization of the final feature map (Ak) will show the discriminative region of the image. <br />
+* Simplest summary of all the Ak,k=1,...,K would be its linear combinations with some weights. <br />
+* Some feature maps would be more important to make a decision on one class than others, so weights should depend on the class of interest. <br />
+
+
+
+
 
